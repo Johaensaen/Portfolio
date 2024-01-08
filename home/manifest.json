@@ -1,0 +1,23 @@
+{
+  "originalUrl": "about:srcdoc",
+  "indexFilename": "index.html",
+  "resources": {
+    "fonts/1": "https://use.typekit.net/pf/be/ftnk/n5/l?subset_id=1&fvd=n5&ec_token=O1o6kB9jyB05i20QvhYz5KZqtmKyf4o2ZXT6V6rDk%2FMAPY4hr6YR38gkKZcJDBY1",
+    "fonts/4": "https://use.typekit.net/pf/be/ftnk/n4/l?subset_id=1&fvd=n4&ec_token=O1o6kB9jyB05i20QvhYz5KZqtmKyf4o2ZXT6V6rDk%2FMAPY4hr6YR38gkKZcJDBY1",
+    "fonts/7": "https://use.typekit.net/pf/be/ftnk/n7/l?subset_id=1&fvd=n7&ec_token=O1o6kB9jyB05i20QvhYz5KZqtmKyf4o2ZXT6V6rDk%2FMAPY4hr6YR38gkKZcJDBY1",
+    "fonts/10": "https://use.typekit.net/pf/be/ftnk/i5/l?subset_id=1&fvd=i5&ec_token=O1o6kB9jyB05i20QvhYz5KZqtmKyf4o2ZXT6V6rDk%2FMAPY4hr6YR38gkKZcJDBY1",
+    "images/0.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/51f2d0bd-05c2-491a-954c-10f62127a324_rwc_81x0x4207x1389x4096.png?h=05b2dc71b992643c422e607aaec3901a",
+    "images/13.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/09a91e65-a37b-4eb0-acab-674c72374084_rwc_0x0x175x74x4096.png?h=52c8c2d4177799ad89b55a855d02a72a",
+    "images/14.jpg": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/bb702096-20ff-4501-b830-1171f7c7d759_rwc_0x0x1277x720x1280.jpeg?h=3cd14da6ce51589bf282515a0cb6e07d",
+    "images/15.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/26e3510e-49f2-47e6-bf73-4230fd952414_rwc_0x0x1916x1080x1280.png?h=237b1d5eb54d60cdb48aeab60d3ffee8",
+    "images/17.jpg": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/e015c467-e427-4a26-b0bf-895089048ce8_rwc_0x0x3743x2110x1280.jpeg?h=ec4f391230b6528cfe5c1a90bd462b14",
+    "images/18.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/7d8c20b4-362d-44f5-b7db-b35e212fe874_rwc_0x0x1916x1080x1280.png?h=b98777b8885278a522357e66cf499818",
+    "images/19.jpg": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/f71ec0a0-eab8-4bc4-a659-27c0477d7f2f_carw_16x9x1280.jpg?h=6ea5ec320749555fbe31bb50dad8bcd1",
+    "images/23.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/e47e338c-53e6-46d7-bc65-00ab99ea4eed_carw_16x9x1280.png?h=b79c7ef03bc3026e5030b13a67b898e6",
+    "images/24.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/bb9d175d-46f1-4bc6-b3a0-1fc01dcd633a_rwc_596x510x3121x1759x1280.png?h=ca93b9833882b1deea22a769e8ad1e03",
+    "images/20.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/602916d0-60be-47f7-8930-b35f54e8387a_carw_16x9x1280.png?h=aff3058e336cadd846dcf81b1931578b",
+    "images/21.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/fb7dfd7f-12ae-46c2-a2ef-ce07232730c1_carw_16x9x1280.png?h=53439d23180501eca12739ebe64769a9",
+    "images/22.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/971f4833-d392-4c5c-9106-a739a38f3b7a_rwc_0x741x1920x1082x1280.png?h=679748efb97cb12e6ddc308d7575aaa2",
+    "images/16.png": "https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/6bbf39b8-5ae6-441f-b071-765479de771c_rwc_0x5x1242x700x1242.png?h=7891e032958a5b84659dd3964d110cf9"
+  }
+}
