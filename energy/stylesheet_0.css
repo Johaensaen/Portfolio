@@ -158,6 +158,20 @@ html:before {
 }
 
 .logo img {
+    opacity: 0;
+}
+
+.logo a.image-link.image-normal {
+    max-width: 100%;
+    display: inline-block;
+    background: url("../assets/logo/normal.png") no-repeat;
+}
+
+.logo:hover a.image-link.image-normal {
+    background: url("../assets/logo/inverted.png") no-repeat;
+}
+
+/* .logo img {
     max-width: 100%
 }
 
@@ -169,7 +183,7 @@ html:before {
 .logo.has-rollover.hoverable:hover .image-link,
 .logo-secondary.has-rollover.hoverable:hover .image-link {
     display: none
-}
+} */
 
 .logo-image {
     width: 100%
