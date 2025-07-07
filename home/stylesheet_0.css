@@ -587,8 +587,7 @@ nav .page-title {
     background-color: #F7F8F9;
     background-image:
         /* original URL: https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/51f2d0bd-05c2-491a-954c-10f62127a324_rwc_81x0x4207x1389x4096.png?h=05b2dc71b992643c422e607aaec3901a */
-        /* Banner image */
-        /* url(images/0.png); */
+        url(images/0.png);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
