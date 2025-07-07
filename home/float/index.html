@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="pageTitle">Float - Navigation & Fotografie</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom styles for rounded corners on all elements */
+        * {
+            border-radius: 0.75rem; /* Slightly more rounded corners for a softer look */
+        }
+        /* Ensure images and iframes are responsive */
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Enhance section titles */
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px; /* Underline length */
+            height: 4px;
+            background-color: #3b82f6; /* Blue underline */
+            border-radius: 9999px; /* Pill shape */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <header class="w-full bg-white shadow-lg p-4 mb-8 flex flex-col sm:flex-row justify-between items-center rounded-xl">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <!-- Logo -->
+                <img src="https://johaensaen.github.io/Portfolio/images/Logo.png" alt="" class="h-12 w-12 mr-4 rounded-full shadow-md">
+                <h1 class="text-3xl font-bold text-gray-800" data-key="headerTitle">Johannes Sondergeld</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center sm:justify-end gap-4">
+                <a href="../home/#about" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navAbout">Über mich</a>
+                <a href="../home/#projects" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navProjects">Projekte</a>
+                <a href="../home/#contact" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navContact">Kontakt</a>
+                <button id="language-toggle" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105">
+                    EN / DE
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="w-full container flex-grow">
+            <section class="bg-white shadow-lg p-8 mb-8 rounded-xl">
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-8 text-center section-title" data-key="projectTitle">Float - Navigation & Fotografie</h2>
+                <img src="https://johaensaen.github.io/Portfolio/images/Float.png" alt="" class="w-full h-auto object-cover mb-8 rounded-lg shadow-md">
+
+                <div class="mb-8 p-6 bg-blue-50 rounded-lg shadow-inner">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4" data-key="projectOverviewTitle">Projektübersicht</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4" data-key="projectDescription1">
+                        Dies ist die Detailseite für das Projekt "Float - Navigation & Fotografie". Dieses Projekt kombiniert die Aspekte der Navigation mit der Leidenschaft für Fotografie. Es wurde eine Anwendung entwickelt, die es Nutzern ermöglicht, Routen zu planen und gleichzeitig interessante Orte für Fotomotive zu entdecken.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed" data-key="projectDescription2">
+                        Die App integriert GPS-Daten mit einer Datenbank von Sehenswürdigkeiten und fotogenen Orten. Nutzer können ihre eigenen Fotos hochladen und teilen, wodurch eine Community von Entdeckern und Fotografen entsteht. Der Fokus lag auf einer intuitiven Benutzeroberfläche und der nahtlosen Verbindung von Navigation und kreativer Entfaltung.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-6 section-title" data-key="projectFeaturesTitle">Hauptmerkmale</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature1Title">Routenplanung mit Fotospot-Integration:</strong> <span data-key="feature1Desc">Planen Sie Ihre Reisen und entdecken Sie gleichzeitig die besten Orte für Fotos.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature2Title">GPS-basierte Navigation:</strong> <span data-key="feature2Desc">Zuverlässige Navigation, die Sie sicher zu Ihren Zielen und Fotospots führt.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature3Title">Community-Funktionen für Fotos und Orte:</strong> <span data-key="feature3Desc">Teilen Sie Ihre Entdeckungen und Fotos mit einer wachsenden Community.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature4Title">Offline-Kartenunterstützung:</strong> <span data-key="feature4Desc">Nutzen Sie Karten und Navigation auch ohne Internetverbindung.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="../home/#projects" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg" data-key="backToPortfolio">Zurück zum Portfolio</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-white shadow-lg p-4 mt-8 text-center text-gray-600 text-sm rounded-xl">
+            <p data-key="footerText">&copy; 2025 Johannes Sondergeld. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+
+    <script>
+        const translations = {
+            de: {
+                pageTitle: "Float - Navigation & Fotografie",
+                headerTitle: "Johannes Sondergeld",
+                navAbout: "Über mich",
+                navProjects: "Projekte",
+                navContact: "Kontakt",
+                projectTitle: "Float - Navigation & Fotografie",
+                projectOverviewTitle: "Projektübersicht",
+                projectDescription1: "Dies ist die Detailseite für das Projekt \"Float - Navigation & Fotografie\". Dieses Projekt kombiniert die Aspekte der Navigation mit der Leidenschaft für Fotografie. Es wurde eine Anwendung entwickelt, die es Nutzern ermöglicht, Routen zu planen und gleichzeitig interessante Orte für Fotomotive zu entdecken.",
+                projectDescription2: "Die App integriert GPS-Daten mit einer Datenbank von Sehenswürdigkeiten und fotogenen Orten. Nutzer können ihre eigenen Fotos hochladen und teilen, wodurch eine Community von Entdeckern und Fotografen entsteht. Der Fokus lag auf einer intuitiven Benutzeroberfläche und der nahtlosen Verbindung von Navigation und kreativer Entfaltung.",
+                projectFeaturesTitle: "Hauptmerkmale",
+                feature1Title: "Routenplanung mit Fotospot-Integration:",
+                feature1Desc: "Planen Sie Ihre Reisen und entdecken Sie gleichzeitig die besten Orte für Fotos.",
+                feature2Title: "GPS-basierte Navigation:",
+                feature2Desc: "Zuverlässige Navigation, die Sie sicher zu Ihren Zielen und Fotospots führt.",
+                feature3Title: "Community-Funktionen für Fotos und Orte:",
+                feature3Desc: "Teilen Sie Ihre Entdeckungen und Fotos mit einer wachsenden Community.",
+                feature4Title: "Offline-Kartenunterstützung:",
+                feature4Desc: "Nutzen Sie Karten und Navigation auch ohne Internetverbindung.",
+                backToPortfolio: "Zurück zum Portfolio",
+                footerText: "&copy; 2025 Johannes Sondergeld. Alle Rechte vorbehalten."
+            },
+            en: {
+                pageTitle: "Float - Navigation & Photography",
+                headerTitle: "Johannes Sondergeld",
+                navAbout: "About Me",
+                navProjects: "Projects",
+                navContact: "Contact",
+                projectTitle: "Float - Navigation & Photography",
+                projectOverviewTitle: "Project Overview",
+                projectDescription1: "This is the detail page for the \"Float - Navigation & Photography\" project. This project combines aspects of navigation with a passion for photography. An application was developed that allows users to plan routes while discovering interesting places for photo opportunities.",
+                projectDescription2: "The app integrates GPS data with a database of landmarks and photogenic locations. Users can upload and share their own photos, creating a community of explorers and photographers. The focus was on an intuitive user interface and the seamless connection of navigation and creative expression.",
+                projectFeaturesTitle: "Key Features",
+                feature1Title: "Route planning with photo spot integration:",
+                feature1Desc: "Plan your trips and discover the best places for photos at the same time.",
+                feature2Title: "GPS-based navigation:",
+                feature2Desc: "Reliable navigation that safely guides you to your destinations and photo spots.",
+                feature3Title: "Community features for photos and locations:",
+                feature3Desc: "Share your discoveries and photos with a growing community.",
+                feature4Title: "Offline map support:",
+                feature4Desc: "Use maps and navigation even without an internet connection.",
+                backToPortfolio: "Back to Portfolio",
+                footerText: "&copy; 2025 Johannes Sondergeld. All rights reserved."
+            }
+        };
+
+        let currentLang = 'de'; // Default language
+
+        function updateContent() {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang][key]) {
+                    element.innerHTML = translations[currentLang][key];
+                }
+            });
+            // Update page title separately as it's in the head
+            document.querySelector('title').innerHTML = translations[currentLang].pageTitle;
+        }
+
+        document.getElementById('language-toggle').addEventListener('click', () => {
+            currentLang = currentLang === 'de' ? 'en' : 'de';
+            updateContent();
+        });
+
+        // Initial content load
+        document.addEventListener('DOMContentLoaded', updateContent);
+    </script>
+</body>
+</html>
