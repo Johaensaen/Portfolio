@@ -1,3 +1,17 @@
+/* Allgemeine responsive Regeln */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Entfernt zusätzlichen Platz unter Bildern */
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .site-header:after,
 .site-content:after,
 .logo-wrap:after {
@@ -63,9 +77,9 @@ ul li {
     list-style-type: none
 }
 
-img {
+/* img {
     vertical-align: top
-}
+} */
 
 p {
     margin: 0
@@ -177,66 +191,6 @@ html:before {
 .logo:hover a.image-link.image-normal {
     background: url("../assets/logo/inverted.png") no-repeat;
 }
-
-/* .logo img.image-link.image-rollover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    z-index: 99;
-}
-
-.logo:hover img.image-link.image-rollover {
-    display: inline;
-}
-
-.logo:hover img.image-link.image-normal {
-    max-width: 100%;
-    display: inline-block;
-    background: url("images/13.png") no-repeat;
-} */
-
-
-/* .logo .image-link {
-    display: inline-block;
-    max-width: 100%
-}
-
-.logo .image-normal {
-    display: inline-block;
-    max-width: 100%
-} */
-
-/* .logo .image-normal:hover {
-    opacity: 0;
-    max-width: 100%
-}
-
-.logo .image-rollover {
-    opacity: 0;
-    max-width: 100%
-} */
-
-/* .logo .image-rollover:hover {
-    opacity: 1;
-    max-width: 100%
-} */
-
-/* .logo.has-rollover.hoverable:hover .image-link {
-    opacity: 0;
-    max-width: 100%
-}
-
-.logo-secondary.has-rollover.hoverable:hover .image-rollover {
-    opacity: 1;
-    max-width: 100%
-} */
-
-/* .logo.has-rollover.hoverable:hover .image-link,
-.logo-secondary.has-rollover.hoverable:hover .image-link {
-    display: inline-block;
-    max-width: 100%
-} */
 
 .logo-image {
     width: 100%
@@ -585,10 +539,8 @@ nav .page-title {
 
 .masthead {
     background-color: #F7F8F9;
-    background-image:
-        /* original URL: https://cdn.myportfolio.com/209986eb-fb83-4059-8740-ecb1d36ae38f/51f2d0bd-05c2-491a-954c-10f62127a324_rwc_81x0x4207x1389x4096.png?h=05b2dc71b992643c422e607aaec3901a */
-        /* Banner image */
-        /* url(images/0.png); */
+    /* Banner image */
+    /* url(images/0.png); */
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -646,7 +598,9 @@ nav .page-title {
     .masthead {
         margin-bottom: 0px;
         padding-bottom: 38px;
-        padding-top: 44px
+        padding-top: 44px;
+        padding-left: 5%; /* Angepasst für mobile Ansicht */
+        padding-right: 5%; /* Angepasst für mobile Ansicht */
     }
 
     .masthead h1 {
@@ -719,7 +673,13 @@ nav .page-title {
         font-size: 14px;
         line-height: 20px;
         padding-bottom: 28px;
-        padding-top: 28px
+        padding-top: 28px;
+        display: flex; /* Flexbox für den Footer */
+        flex-direction: column; /* Elemente untereinander */
+        align-items: center; /* Elemente zentrieren */
+    }
+    .pf-footer-social {
+        margin-bottom: 10px; /* Abstand zwischen Social Icons und Text */
     }
 }
 
@@ -734,29 +694,45 @@ nav .page-title {
 
 @media (max-width:768px) {
     nav {
-        display: none;
+        display: none; /* Navigation standardmäßig ausblenden */
         padding: 0;
-        width: 100%
+        width: 100%;
+        text-align: center; /* Navigationspunkte zentrieren */
+    }
+    nav.active { /* Klasse, die per JavaScript hinzugefügt wird, wenn das Menü geöffnet ist */
+        display: block;
+    }
+    nav ul {
+        flex-direction: column; /* Navigationspunkte untereinander */
+        padding: 0;
+    }
+    nav ul li,
+    .page-title {
+        margin: 10px 0; /* Vertikaler Abstand zwischen Navigationspunkten */
     }
 
     .site-header {
-        padding: 40px 5%
+        padding: 40px 5%;
+        display: flex; /* Flexbox für Header-Elemente */
+        justify-content: space-between; /* Logo links, Hamburger rechts */
+        align-items: center;
     }
 
     .logo-wrap {
         max-width: 100%;
         padding: 0;
-        width: 100%
+        width: auto; /* Breite anpassen, um Platz für Hamburger zu lassen */
     }
 
     .logo {
         max-width: 100%;
-        padding: 0 39px 0 0
+        padding: 0; /* Padding entfernen */
     }
 
     .logo-image {
         margin-bottom: -5px;
-        margin-top: -5px
+        margin-top: -5px;
+        float: none; /* Float entfernen */
     }
 
     .logo-image img {
@@ -765,19 +741,31 @@ nav .page-title {
 
     main,
     .site-container {
-        width: 100%
+        width: 100%;
+        padding: 0 5%; /* Horizontalen Padding für Main-Inhalt hinzufügen */
     }
 
     .site-content {
         margin: 0;
-        padding: 0 0;
-        width: 100%
+        padding: 0;
+        width: 100%;
+        display: flex; /* Flexbox für Sidebar und Main */
+        flex-direction: column; /* Untereinander anordnen */
     }
 
     .site-footer {
         padding-left: 5%;
         padding-right: 5%;
         width: 100%
+    }
+
+    /* Hamburger-Menü */
+    .hamburger-click-area {
+        display: block; /* Hamburger-Icon anzeigen */
+        cursor: pointer;
+        font-size: 2em; /* Beispielgröße */
+        color: #222; /* Farbe des Icons anpassen */
+        padding: 10px; /* Klickbereich vergrößern */
     }
 }
 
@@ -797,11 +785,17 @@ nav .page-title {
     .sidebar-content {
         float: none;
         margin: 0;
-        width: auto
+        width: auto;
+        order: 1; /* Sidebar zuerst anzeigen (oben) */
+    }
+
+    main {
+        order: 2; /* Main-Inhalt danach (unten) */
     }
 
     .project-covers {
-        padding-top: 0
+        padding-top: 0;
+        flex-direction: column; /* Projekte untereinander anordnen */
     }
 }
 
@@ -1050,7 +1044,7 @@ nav .page-title {
 @media (max-width:540px) {
     .project-cover {
         margin-right: 0 !important;
-        width: 100%
+        width: 100%; /* Volle Breite für mobile Ansicht */
     }
 
     .project-cover .title {
