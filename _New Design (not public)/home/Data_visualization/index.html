@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="pageTitle">Datenvisualisierung</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom styles for rounded corners on all elements */
+        * {
+            border-radius: 0.75rem; /* Slightly more rounded corners for a softer look */
+        }
+        /* Ensure images and iframes are responsive */
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Enhance section titles */
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px; /* Underline length */
+            height: 4px;
+            background-color: #3b82f6; /* Blue underline */
+            border-radius: 9999px; /* Pill shape */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <header class="w-full bg-white shadow-lg p-4 mb-8 flex flex-col sm:flex-row justify-between items-center rounded-xl">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <!-- Logo -->
+                <img src="../images/Logo.png" alt="" class="h-12 w-12 mr-4 rounded-full shadow-md">
+                <h1 class="text-3xl font-bold text-gray-800" data-key="headerTitle">Johannes Sondergeld</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center sm:justify-end gap-4">
+                <a href="../home/#about" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navAbout">Über mich</a>
+                <a href="../home/#projects" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navProjects">Projekte</a>
+                <a href="../home/#contact" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navContact">Kontakt</a>
+                <button id="language-toggle" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105">
+                    EN / DE
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="w-full container flex-grow">
+            <section class="bg-white shadow-lg p-8 mb-8 rounded-xl">
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-8 text-center section-title" data-key="projectTitle">Datenvisualisierung</h2>
+                <img src="../images/Data_visualization.png" alt="" class="w-full h-auto object-cover mb-8 rounded-lg shadow-md">
+
+                <div class="mb-8 p-6 bg-blue-50 rounded-lg shadow-inner">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4" data-key="projectOverviewTitle">Projektübersicht</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4" data-key="projectDescription1">
+                        Dies ist die Detailseite für das Projekt "Datenvisualisierung". Dieses Projekt konzentriert sich auf die Kunst und Wissenschaft, komplexe Datensätze in verständliche und ansprechende visuelle Formen zu übersetzen. Ziel war es, Rohdaten in informative Grafiken, Diagramme und Dashboards umzuwandeln, die Muster, Trends und Ausreißer leicht erkennbar machen.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed" data-key="projectDescription2">
+                        Es wurden verschiedene Visualisierungstechniken und -tools eingesetzt, um Daten aus unterschiedlichen Domänen darzustellen. Der Fokus lag auf der Entwicklung interaktiver Visualisierungen, die es dem Benutzer ermöglichen, die Daten zu erkunden und tiefer Einblicke zu gewinnen.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-6 section-title" data-key="projectFeaturesTitle">Hauptmerkmale</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature1Title">Interaktive Diagramme und Grafiken:</strong> <span data-key="feature1Desc">Dynamische und anpassbare Visualisierungen für eine bessere Datenexploration.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature2Title">Anpassbare Dashboards:</strong> <span data-key="feature2Desc">Erstellung individueller Dashboards zur Überwachung relevanter Metriken.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature3Title">Unterstützung für verschiedene Datentypen:</strong> <span data-key="feature33Desc">Kompatibilität mit einer Vielzahl von Datenformaten und Quellen.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature4Title">Benutzerfreundliche Exploration von Daten:</strong> <span data-key="feature4Desc">Intuitive Steuerelemente zur einfachen Navigation und Analyse der Daten.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="../home/#projects" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg" data-key="backToPortfolio">Zurück zum Portfolio</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-white shadow-lg p-4 mt-8 text-center text-gray-600 text-sm rounded-xl">
+            <p data-key="footerText">&copy; 2025 Johannes Sondergeld. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+
+    <script>
+        const translations = {
+            de: {
+                pageTitle: "Datenvisualisierung",
+                headerTitle: "Johannes Sondergeld",
+                navAbout: "Über mich",
+                navProjects: "Projekte",
+                navContact: "Kontakt",
+                projectTitle: "Datenvisualisierung",
+                projectOverviewTitle: "Projektübersicht",
+                projectDescription1: "Dies ist die Detailseite für das Projekt \"Datenvisualisierung\". Dieses Projekt konzentriert sich auf die Kunst und Wissenschaft, komplexe Datensätze in verständliche und ansprechende visuelle Formen zu übersetzen. Ziel war es, Rohdaten in informative Grafiken, Diagramme und Dashboards umzuwandeln, die Muster, Trends und Ausreißer leicht erkennbar machen.",
+                projectDescription2: "Es wurden verschiedene Visualisierungstechniken und -tools eingesetzt, um Daten aus unterschiedlichen Domänen darzustellen. Der Fokus lag auf der Entwicklung interaktiver Visualisierungen, die es dem Benutzer ermöglichen, die Daten zu erkunden und tiefer Einblicke zu gewinnen.",
+                projectFeaturesTitle: "Hauptmerkmale",
+                feature1Title: "Interaktive Diagramme und Grafiken:",
+                feature1Desc: "Dynamische und anpassbare Visualisierungen für eine bessere Datenexploration.",
+                feature2Title: "Anpassbare Dashboards:",
+                feature2Desc: "Erstellung individueller Dashboards zur Überwachung relevanter Metriken.",
+                feature3Title: "Unterstützung für verschiedene Datentypen:",
+                feature3Desc: "Kompatibilität mit einer Vielzahl von Datenformaten und Quellen.",
+                feature4Title: "Benutzerfreundliche Exploration von Daten:",
+                feature4Desc: "Intuitive Steuerelemente zur einfachen Navigation und Analyse der Daten.",
+                backToPortfolio: "Zurück zum Portfolio",
+                footerText: "&copy; 2025 Johannes Sondergeld. Alle Rechte vorbehalten."
+            },
+            en: {
+                pageTitle: "Data Visualization",
+                headerTitle: "Johannes Sondergeld",
+                navAbout: "About Me",
+                navProjects: "Projects",
+                navContact: "Contact",
+                projectTitle: "Data Visualization",
+                projectOverviewTitle: "Project Overview",
+                projectDescription1: "This is the detail page for the \"Data Visualization\" project. This project focuses on the art and science of translating complex datasets into understandable and appealing visual forms. The goal was to transform raw data into informative charts, graphs, and dashboards that make patterns, trends, and outliers easily recognizable.",
+                projectDescription2: "Various visualization techniques and tools were used to represent data from different domains. The focus was on developing interactive visualizations that allow the user to explore the data and gain deeper insights.",
+                projectFeaturesTitle: "Key Features",
+                feature1Title: "Interactive charts and graphs:",
+                feature1Desc: "Dynamic and customizable visualizations for better data exploration.",
+                feature2Title: "Customizable dashboards:",
+                feature2Desc: "Creation of individual dashboards for monitoring relevant metrics.",
+                feature3Title: "Support for various data types:",
+                feature3Desc: "Compatibility with a variety of data formats and sources.",
+                feature4Title: "User-friendly data exploration:",
+                feature4Desc: "Intuitive controls for easy navigation and analysis of the data.",
+                backToPortfolio: "Back to Portfolio",
+                footerText: "&copy; 2025 Johannes Sondergeld. All rights reserved."
+            }
+        };
+
+        let currentLang = 'de'; // Default language
+
+        function updateContent() {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang][key]) {
+                    element.innerHTML = translations[currentLang][key];
+                }
+            });
+            // Update page title separately as it's in the head
+            document.querySelector('title').innerHTML = translations[currentLang].pageTitle;
+        }
+
+        document.getElementById('language-toggle').addEventListener('click', () => {
+            currentLang = currentLang === 'de' ? 'en' : 'de';
+            updateContent();
+        });
+
+        // Initial content load
+        document.addEventListener('DOMContentLoaded', updateContent);
+    </script>
+</body>
+</html>

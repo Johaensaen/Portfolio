@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="pageTitle">energyGhost - Bachelorarbeit</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom styles for rounded corners on all elements */
+        * {
+            border-radius: 0.75rem; /* Slightly more rounded corners for a softer look */
+        }
+        /* Ensure images and iframes are responsive */
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Enhance section titles */
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px; /* Underline length */
+            height: 4px;
+            background-color: #3b82f6; /* Blue underline */
+            border-radius: 9999px; /* Pill shape */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <header class="w-full bg-white shadow-lg p-4 mb-8 flex flex-col sm:flex-row justify-between items-center rounded-xl">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <!-- Logo -->
+                <img src="../images/Logo.png" alt="" class="h-12 w-12 mr-4 rounded-full shadow-md">
+                <h1 class="text-3xl font-bold text-gray-800" data-key="headerTitle">Johannes Sondergeld</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center sm:justify-end gap-4">
+                <a href="../index.html#about" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navAbout">Über mich</a>
+                <a href="../#projects" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navProjects">Projekte</a>
+                <a href="../#contact" class="text-gray-600 hover:text-blue-600 font-medium px-4 py-2 rounded-lg transition duration-300 transform hover:scale-105" data-key="navContact">Kontakt</a>
+                <button id="language-toggle" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105">
+                    EN / DE
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="w-full container flex-grow">
+            <section class="bg-white shadow-lg p-8 mb-8 rounded-xl">
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-8 text-center section-title" data-key="projectTitle">energyGhost - Bachelorarbeit</h2>
+                <img src="../images/energyGhost.png" alt="" class="w-full h-auto object-cover mb-8 rounded-lg shadow-md">
+
+                <div class="mb-8 p-6 bg-blue-50 rounded-lg shadow-inner">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4" data-key="projectOverviewTitle">Projektübersicht</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4" data-key="projectDescription1">
+                        Dies ist die Detailseite für das Projekt "energyGhost - Bachelorarbeit". Dieses innovative Projekt befasst sich mit der Analyse und Optimierung des Energieverbrauchs in Haushalten und Unternehmen. Ziel war es, durch intelligente Algorithmen und benutzerfreundliche Visualisierungen Einblicke in das Verbrauchsverhalten zu geben und Potenziale zur Energieeinsparung aufzuzeigen.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed" data-key="projectDescription2">
+                        Im Rahmen dieser Bachelorarbeit wurden verschiedene Datenquellen integriert, um ein umfassendes Bild des Energieflusses zu erhalten. Die Entwicklung umfasste sowohl Hardware- als auch Softwarekomponenten, die in einer prototypischen Umgebung getestet wurden. Die Ergebnisse zeigten signifikante Möglichkeiten zur Reduzierung des ökologischen Fußabdrucks und der Betriebskosten.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-6 section-title" data-key="projectFeaturesTitle">Hauptmerkmale</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature1Title">Echtzeit-Energieüberwachung:</strong> <span data-key="feature1Desc">Detaillierte Erfassung und Anzeige des aktuellen Energieverbrauchs.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature2Title">Anomalieerkennung im Verbrauch:</strong> <span data-key="feature2Desc">Automatische Identifizierung ungewöhnlicher Verbrauchsmuster zur Fehlerbehebung oder Optimierung.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature3Title">Personalisierte Sparvorschläge:</strong> <span data-key="feature3Desc">KI-basierte Empfehlungen zur Reduzierung des Energieverbrauchs, zugeschnitten auf individuelle Gewohnheiten.</span>
+                        </li>
+                        <li class="bg-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <strong class="text-blue-600" data-key="feature4Title">Interaktive Datenvisualisierungen:</strong> <span data-key="feature4Desc">Benutzerfreundliche Grafiken und Dashboards zur einfachen Interpretation komplexer Verbrauchsdaten.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="./#projects" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg" data-key="backToPortfolio">Zurück zum Portfolio</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-white shadow-lg p-4 mt-8 text-center text-gray-600 text-sm rounded-xl">
+            <p data-key="footerText">&copy; 2025 Johannes Sondergeld. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+
+    <script>
+        const translations = {
+            de: {
+                pageTitle: "energyGhost - Bachelorarbeit",
+                headerTitle: "Johannes Sondergeld",
+                navAbout: "Über mich",
+                navProjects: "Projekte",
+                navContact: "Kontakt",
+                projectTitle: "energyGhost - Bachelorarbeit",
+                projectOverviewTitle: "Projektübersicht",
+                projectDescription1: "Dies ist die Detailseite für das Projekt \"energyGhost - Bachelorarbeit\". Dieses innovative Projekt befasst sich mit der Analyse und Optimierung des Energieverbrauchs in Haushalten und Unternehmen. Ziel war es, durch intelligente Algorithmen und benutzerfreundliche Visualisierungen Einblicke in das Verbrauchsverhalten zu geben und Potenziale zur Energieeinsparung aufzuzeigen.",
+                projectDescription2: "Im Rahmen dieser Bachelorarbeit wurden verschiedene Datenquellen integriert, um ein umfassendes Bild des Energieflusses zu erhalten. Die Entwicklung umfasste sowohl Hardware- als auch Softwarekomponenten, die in einer prototypischen Umgebung getestet wurden. Die Ergebnisse zeigten signifikante Möglichkeiten zur Reduzierung des ökologischen Fußabdrucks und der Betriebskosten.",
+                projectFeaturesTitle: "Hauptmerkmale",
+                feature1Title: "Echtzeit-Energieüberwachung:",
+                feature1Desc: "Detaillierte Erfassung und Anzeige des aktuellen Energieverbrauchs.",
+                feature2Title: "Anomalieerkennung im Verbrauch:",
+                feature2Desc: "Automatische Identifizierung ungewöhnlicher Verbrauchsmuster zur Fehlerbehebung oder Optimierung.",
+                feature3Title: "Personalisierte Sparvorschläge:",
+                feature3Desc: "KI-basierte Empfehlungen zur Reduzierung des Energieverbrauchs, zugeschnitten auf individuelle Gewohnheiten.",
+                feature4Title: "Interaktive Datenvisualisierungen:",
+                feature4Desc: "Benutzerfreundliche Grafiken und Dashboards zur einfachen Interpretation komplexer Verbrauchsdaten.",
+                backToPortfolio: "Zurück zum Portfolio",
+                footerText: "&copy; 2025 Johannes Sondergeld. Alle Rechte vorbehalten."
+            },
+            en: {
+                pageTitle: "energyGhost - Bachelor Thesis",
+                headerTitle: "Johannes Sondergeld",
+                navAbout: "About Me",
+                navProjects: "Projects",
+                navContact: "Contact",
+                projectTitle: "energyGhost - Bachelor Thesis",
+                projectOverviewTitle: "Project Overview",
+                projectDescription1: "This is the detail page for the \"energyGhost - Bachelor Thesis\" project. This innovative project deals with the analysis and optimization of energy consumption in households and businesses. The goal was to provide insights into consumption behavior and identify potential energy savings through intelligent algorithms and user-friendly visualizations.",
+                projectDescription2: "Within the scope of this bachelor's thesis, various data sources were integrated to obtain a comprehensive picture of the energy flow. The development included both hardware and software components, which were tested in a prototype environment. The results showed significant opportunities for reducing the ecological footprint and operating costs.",
+                projectFeaturesTitle: "Key Features",
+                feature1Title: "Real-time energy monitoring:",
+                feature1Desc: "Detailed collection and display of current energy consumption.",
+                feature2Title: "Consumption anomaly detection:",
+                feature2Desc: "Automatic identification of unusual consumption patterns for troubleshooting or optimization.",
+                feature3Title: "Personalized savings suggestions:",
+                feature3Desc: "AI-based recommendations for reducing energy consumption, tailored to individual habits.",
+                feature4Title: "Interactive data visualizations:",
+                feature4Desc: "User-friendly graphics and dashboards for easy interpretation of complex consumption data.",
+                backToPortfolio: "Back to Portfolio",
+                footerText: "&copy; 2025 Johannes Sondergeld. All rights reserved."
+            }
+        };
+
+        let currentLang = 'de'; // Default language
+
+        function updateContent() {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang][key]) {
+                    element.innerHTML = translations[currentLang][key];
+                }
+            });
+            // Update page title separately as it's in the head
+            document.querySelector('title').innerHTML = translations[currentLang].pageTitle;
+        }
+
+        document.getElementById('language-toggle').addEventListener('click', () => {
+            currentLang = currentLang === 'de' ? 'en' : 'de';
+            updateContent();
+        });
+
+        // Initial content load
+        document.addEventListener('DOMContentLoaded', updateContent);
+    </script>
+</body>
+</html>
